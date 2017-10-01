@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue js</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		
+		<input type="text" name="" placeholder="Agrega una Nota" v-model="mensaje">
+		<button @click="guardarNota(mensaje)">Guardar Nota</button>
+		<ul v-for="nota in notas">
+			<li>{{ nota.nombre }}</li>
+		</ul>
+
+		<pre>
+			{{$data | json}}
+		</pre>
+	</div>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
