@@ -8,8 +8,8 @@ new Vue({
 			{nombre: 'Cedric'},			
 		]
 	}, methods: {
-		guardarNota: function(notes){
-			this.notas.push({nombre: notes});
+		guardarNota(){
+			this.notas.unshift({mensaje});
 		}
 
 	}
